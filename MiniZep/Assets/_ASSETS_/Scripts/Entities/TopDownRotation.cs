@@ -16,13 +16,17 @@ public class TopDownRotation : MonoBehaviour
         _controller.OnLookEvent += OnAim;
     }
 
-    public void OnAim(Vector2 newAimDirection)
+    public void OnAim(Vector2 mousePosition)
     {
-        RotateArm(newAimDirection);
+        FlipPlayer(mousePosition);
     }
 
-    private void RotateArm(Vector2 direction)
+    private void FlipPlayer(Vector2 mousePosition)
     {
-        characterRenderer.flipX = direction.x >= 0 ? characterRenderer.flipX = false : characterRenderer.flipX = true;
+        // 마우스 위치에 플레이어 위치를 빼야 기준점이 잡힘
+        Vector2 direction = mousePosition - (Vector2)transform.position;
+
+        float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        characterRenderer.flipX = Mathf.Abs(rotZ) > 90f;
     }
 }

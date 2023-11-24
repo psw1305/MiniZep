@@ -40,7 +40,7 @@ public class TopDownMovement : MonoBehaviour
             animator.SetBool("isRun", true);
         }
         else
-        {
+        {   
             animator.SetBool("isRun", false);
         }
     }

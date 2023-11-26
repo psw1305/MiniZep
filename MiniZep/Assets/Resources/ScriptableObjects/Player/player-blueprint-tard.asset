@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: player-blueprint-tard
   m_EditorClassIdentifier: 
   cName: Tard
+  cSprite: {fileID: 875390823, guid: e9a9951b4ec385449859eadfc8caf674, type: 3}
   cAnim: {fileID: 9100000, guid: ecd60d3db815de349ad08ad31ee8ceb6, type: 2}

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: player-blueprint-mort
   m_EditorClassIdentifier: 
   cName: Mort
+  cSprite: {fileID: 1552686564, guid: 2f43fd9c416c07a4a8d9c7d5fab28dca, type: 3}
   cAnim: {fileID: 9100000, guid: b2f0601767e388449a149392e00519aa, type: 2}

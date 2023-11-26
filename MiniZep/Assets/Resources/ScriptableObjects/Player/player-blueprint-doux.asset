@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: player-blueprint-doux
   m_EditorClassIdentifier: 
   cName: Doux
+  cSprite: {fileID: 1254297827, guid: 33edbb54db9ad3f46a820361568ad85e, type: 3}
   cAnim: {fileID: 9100000, guid: 0962505e242f2ab41890b275fde766b5, type: 2}

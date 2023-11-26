@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: player-blueprint-vita
   m_EditorClassIdentifier: 
   cName: Vita
+  cSprite: {fileID: -1555197742, guid: 17a3da39139020440883660b1ff7b726, type: 3}
   cAnim: {fileID: 9100000, guid: ab3774ae8f422404a9f0ea6a2c238d0d, type: 2}

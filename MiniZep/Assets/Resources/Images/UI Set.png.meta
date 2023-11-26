@@ -185,6 +185,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ui-player-select-board
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e74e41cfc540384691b0a65cf4cb4fd
+      internalID: 1380233096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-player-select-toggle
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 721
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 12, y: 12, z: 12, w: 12}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6268b1bfecf8aff47aab000e75e7eb97
+      internalID: 473151116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -198,6 +240,8 @@ TextureImporter:
     nameFileIdTable:
       ui-button-play-click: -279907772
       ui-button-play-normal: 774595620
+      ui-player-select-board: 1380233096
+      ui-player-select-toggle: 473151116
       ui-player-state: -394096194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

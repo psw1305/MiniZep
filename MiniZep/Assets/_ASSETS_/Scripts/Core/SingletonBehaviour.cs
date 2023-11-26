@@ -7,7 +7,7 @@ public abstract class SingletonBehaviour<T> : MonoBehaviour where T : SingletonB
 
     protected virtual void Awake()
     {
-        if (instance == null)
+        if (instance != null)
         {
             Debug.LogError(string.Format("허용되지 않은 중복 인스턴스 => {0}", typeof(T)));
             Destroy(this);

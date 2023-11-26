@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class Manager : SingletonBehaviour<Manager>
 {
-    protected override void Awake()
-    {
-        base.Awake();
-    }
+    private ResourceManager resource = new();
+    private UIManager ui = new();
+    public static ResourceManager Resource => Instance != null ? Instance.resource : null;
+    public static UIManager UI => Instance != null ? Instance.ui : null;
 }

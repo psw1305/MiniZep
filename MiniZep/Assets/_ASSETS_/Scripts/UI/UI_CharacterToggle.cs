@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class UI_SelectToggle : MonoBehaviour
+public class UI_CharacterToggle : MonoBehaviour
 {
     private Toggle toggle;
     [SerializeField] private TextMeshProUGUI characterName;

@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class ResourceManager
 {
-    private List<CharacterBlueprint> playerBlueprints = new();
+    private List<CharacterBlueprint> characterBlueprints = new();
     private Dictionary<string, GameObject> uiPrefabs = new();
 
     public void Initialize()
     {
         // Player 설계도
-        CharacterBlueprint[] players = Resources.LoadAll<CharacterBlueprint>("ScriptableObjects/Player");
-        foreach (CharacterBlueprint player in players) playerBlueprints.Add(player);
+        CharacterBlueprint[] characters = Resources.LoadAll<CharacterBlueprint>("ScriptableObjects/Player");
+        foreach (CharacterBlueprint character in characters) characterBlueprints.Add(character);
 
         // UI 프리팹
         GameObject[] objs = Resources.LoadAll<GameObject>("Prefabs/UI");  
@@ -24,8 +24,8 @@ public class ResourceManager
         return GameObject.Instantiate(prefab);
     }
 
-    public CharacterBlueprint[] GetPlayerBlueprints()
+    public CharacterBlueprint[] GetCharacterBlueprints()
     {
-        return playerBlueprints.ToArray();
+        return characterBlueprints.ToArray();
     }
 }

@@ -16,8 +16,9 @@ public class Player : MonoBehaviour
 
     private void InitPlayer()
     {
-        characterBlueprint = Manager.Game.PlayerBlueprint;
+        if (Manager.Game.PlayerBlueprint == null) return;
 
+        characterBlueprint = Manager.Game.PlayerBlueprint;
         displayID.text = PlayerPrefs.GetString("user_id", "defaultID");
         spriteRenderer.sprite = characterBlueprint.CSprite;
         animator.runtimeAnimatorController = characterBlueprint.CAnim;

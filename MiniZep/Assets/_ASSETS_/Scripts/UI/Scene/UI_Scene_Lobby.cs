@@ -22,12 +22,13 @@ public class UI_Scene_Lobby : MonoBehaviour
     [SerializeField] private TextMeshProUGUI errorMessage;
 
     [Header("Select Field")]
-    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] private GameObject characterTogglePrefab;
     [SerializeField] private ToggleGroup toggleGroup;
     [SerializeField] private Button nextStepButton;
-    private CharacterBlueprint[] playerBlueprints;
+    private CharacterBlueprint[] characterBlueprints;
 
     [Header("Input Field")]
+    [SerializeField] private Image selectCharacter;
     [SerializeField] private TMP_InputField idInput;
     [SerializeField] private Button playButton;
 
@@ -43,13 +44,13 @@ public class UI_Scene_Lobby : MonoBehaviour
 
     private void InitStepSelect()
     {
-        playerBlueprints = Manager.Resource.GetPlayerBlueprints();
+        characterBlueprints = Manager.Resource.GetCharacterBlueprints();
 
-        for (int i = 0; i < playerBlueprints.Length; i++)
+        for (int i = 0; i < characterBlueprints.Length; i++)
         {
-            var playerToggle = Instantiate(playerPrefab, toggleGroup.transform);
-            var selectToggle = playerToggle.GetComponent<UI_SelectToggle>();
-            selectToggle.Initialized(playerBlueprints[i], toggleGroup);
+            var characterToggle = Instantiate(characterTogglePrefab, toggleGroup.transform);
+            var uiToggle = characterToggle.GetComponent<UI_CharacterToggle>();
+            uiToggle.Initialized(characterBlueprints[i], toggleGroup);
         }
 
         nextStepButton.onClick.AddListener(NextStep);
@@ -61,6 +62,7 @@ public class UI_Scene_Lobby : MonoBehaviour
         if (Manager.Game.PlayerBlueprint == null) return;
 
         step = LobbyStep.Input;
+        selectCharacter.sprite = Manager.Game.PlayerBlueprint.CSprite;
 
         stepSelect.SetActive(false);
         stepInput.SetActive(true);

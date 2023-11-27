@@ -32,6 +32,14 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
+        // 게임 상태가 Pause 일 경우 => return, 움직임 제어
+        if (Manager.Game.State == GameState.Pause)
+        {
+            rigid.velocity = Vector2.zero;
+            animator.SetBool("isRun", false);
+            return;
+        }
+
         direction *= speed;
         rigid.velocity = direction;
 

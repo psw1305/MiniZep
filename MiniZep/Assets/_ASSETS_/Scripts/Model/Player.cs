@@ -1,9 +1,9 @@
 using TMPro;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : SingletonBehaviour<Player>, ICharacter
 {
-    [SerializeField] private TextMeshProUGUI displayID;
+    [SerializeField] private TextMeshProUGUI displayName;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
 
@@ -16,11 +16,21 @@ public class Player : MonoBehaviour
 
     private void InitPlayer()
     {
+        InitCharacter();
+        InitName();
+    }
+
+    public void InitCharacter()
+    {
         if (Manager.Game.PlayerBlueprint == null) return;
 
         characterBlueprint = Manager.Game.PlayerBlueprint;
-        displayID.text = PlayerPrefs.GetString("user_id", "defaultID");
         spriteRenderer.sprite = characterBlueprint.CSprite;
         animator.runtimeAnimatorController = characterBlueprint.CAnim;
+    }
+
+    public void InitName()
+    {
+        displayName.text = PlayerPrefs.GetString("user_id", "defaultID");
     }
 }

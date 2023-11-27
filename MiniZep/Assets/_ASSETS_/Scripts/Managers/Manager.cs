@@ -13,5 +13,6 @@ public class Manager : SingletonBehaviour<Manager>
         base.Awake();
 
         Resource.Initialize();
+        Game.Initialize();
     }
 }

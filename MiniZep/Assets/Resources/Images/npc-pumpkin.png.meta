@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99556bacbb4fe334faaf0f2f4b1bb1d8
+guid: d64e01741ef9877498a7314816dc4d6e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,316 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui-button-play-normal
+      name: pumpkin-idle-0
       rect:
         serializedVersion: 2
-        x: 371
-        y: 531
-        width: 90
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35ecc02efa5b2a640b7010a129d69187
-      internalID: -1749775238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-play-click
-      rect:
-        serializedVersion: 2
-        x: 467
-        y: 531
-        width: 90
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7ca49013e26be440817b6a1d62eefe6
-      internalID: -594274710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-player-state
-      rect:
-        serializedVersion: 2
-        x: 816
-        y: 386
-        width: 80
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e43a6aa2285aad4982d31b667323b43
-      internalID: -394096194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-board-player-select
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 744
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 24, y: 24, z: 24, w: 24}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e74e41cfc540384691b0a65cf4cb4fd
-      internalID: 1380233096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-player-select-toggle
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 721
-        width: 28
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 12, y: 12, z: 12, w: 12}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6268b1bfecf8aff47aab000e75e7eb97
-      internalID: 473151116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-community
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 304
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09e7bd510c88978478d201e1a8aae457
-      internalID: 917161185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-community-click
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 304
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bc74b2631d997f4293bc0bbf687b53b
-      internalID: 1801273578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-menu
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 336
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccbdcd57f35a58345a6aaaa8f3335ec4
-      internalID: 1225067141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-menu-click
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 336
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0069bb7efd72f154e9e7c060a58e9d6b
-      internalID: -60924109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-board
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 807
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 12, y: 12, z: 12, w: 12}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97288b59357e2644183d972daca9f7ca
-      internalID: -37726791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-board-darkbrown
-      rect:
-        serializedVersion: 2
-        x: 656
-        y: 776
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 8, y: 6, z: 8, w: 6}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16dde7b1015679f47b7aa9a73ad19865
-      internalID: -888798411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-escape
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 561
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61e7c3bb0dd09694fb66cb5d02c518a2
-      internalID: 2113124757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-escape-click
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 561
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 778362c96d7ab914191cd43f7fa3f8b1
-      internalID: -1501008769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-board-player-list
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 760
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 12, y: 12, z: 12, w: 12}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ab129bdf50399e4ca8a265419962bce
-      internalID: 1483276437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui-button-simple-x
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 480
+        x: 0
+        y: 0
         width: 16
-        height: 16
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be7472e91e3fcb444bc4e6c82fce351d
-      internalID: -394917528
+      spriteID: 1113a81c1a90127418d4db16329fcbc5
+      internalID: 1120386378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pumpkin-idle-1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e422b5fdf1ae104aba8bc6d30537bd8
+      internalID: 813194528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pumpkin-idle-2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f7ae96bb79f2b428f8a7b5639cc92b
+      internalID: -1359102377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pumpkin-idle-3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c92ed26ff234b468d513b7690d31f1
+      internalID: 1064700403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc-pumpkin_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01248dcc7ab062744b6e4781ae912a40
+      internalID: -874481319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc-pumpkin_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d07d7c4445e3842bee6157e8f46e7b
+      internalID: 1859393309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc-pumpkin_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed221eb365043aa4c88f62dff2c4c20a
+      internalID: 915033219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc-pumpkin_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b700db2d189e74888d61f564ca3ee8
+      internalID: 272956817
       vertices: []
       indices: 
       edges: []
@@ -448,22 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI Set_1: 962096326
-      ui-board: -37726791
-      ui-board-darkbrown: -888798411
-      ui-board-player-list: 1483276437
-      ui-board-player-select: 1380233096
-      ui-button-community: 917161185
-      ui-button-community-click: 1801273578
-      ui-button-escape: 2113124757
-      ui-button-escape-click: -1501008769
-      ui-button-menu: 1225067141
-      ui-button-menu-click: -60924109
-      ui-button-play-click: -279907772
-      ui-button-play-normal: 774595620
-      ui-button-simple-x: -394917528
-      ui-player-select-toggle: 473151116
-      ui-player-state: -394096194
+      npc-pumpkin_4: -874481319
+      npc-pumpkin_5: 1859393309
+      npc-pumpkin_6: 915033219
+      npc-pumpkin_7: 272956817
+      pumpkin-idle-0: 1120386378
+      pumpkin-idle-1: 813194528
+      pumpkin-idle-2: -1359102377
+      pumpkin-idle-3: 1064700403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

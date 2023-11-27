@@ -47,9 +47,7 @@ public class UIManager
             name = typeof(T).Name;
         }
 
-        GameObject go = Manager.Resource.Instantiate($"Scene/{name}");
-        go.transform.SetParent(Root.transform);
-
+        GameObject go = Manager.Resource.Instantiate($"Scene/{name}", Root.transform);
         T sceneUI = Util.GetOrAddComponent<T>(go);
         this.sceneUI = sceneUI;
 

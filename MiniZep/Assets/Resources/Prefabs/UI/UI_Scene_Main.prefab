@@ -373,6 +373,7 @@ MonoBehaviour:
   communityShowBtn: {fileID: 447394312218606998}
   communityHideBtn: {fileID: 8805206726894129445}
   communityPanel: {fileID: 3646518481979834787}
+  communityList: {fileID: 2710291501056073626}
 --- !u!1 &1228416623861895629
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "0\uBA85"
+  m_text: "\uCC38\uC11D \uC778\uC6D0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 186febfe5c99d214bbd8420eeb10eba8, type: 2}
   m_sharedMaterial: {fileID: 6893290456947416606, guid: 186febfe5c99d214bbd8420eeb10eba8, type: 2}
@@ -646,8 +647,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1598,7 +1599,7 @@ GameObject:
   - component: {fileID: 1258616638718639544}
   - component: {fileID: 6446920385210815124}
   m_Layer: 5
-  m_Name: Character List
+  m_Name: Community List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

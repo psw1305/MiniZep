@@ -26,13 +26,17 @@ public class UI_Scene_Main : MonoBehaviour
     [SerializeField] private Button communityShowBtn;
     [SerializeField] private Button communityHideBtn;
     [SerializeField] private GameObject communityPanel;
+    [SerializeField] private Transform communityList;
 
-    private IEnumerator Start()
+    private void OnEnable()
     {
         InitCharacterChange();
         InitNameChange();
         InitViewCommunity();
+    }
 
+    private IEnumerator Start()
+    {
         while (true)
         {
             displayTime.text = Util.GetCurrntTime();
@@ -120,6 +124,7 @@ public class UI_Scene_Main : MonoBehaviour
     {
         communityShowBtn.onClick.AddListener(ShowCommunity);
         communityHideBtn.onClick.AddListener(HideCommunity);
+        Manager.Game.CommunityList = communityList;
     }
 
     private void ShowCommunity()

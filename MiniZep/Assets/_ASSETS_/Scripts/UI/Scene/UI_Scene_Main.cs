@@ -5,6 +5,10 @@ using TMPro;
 
 public class UI_Scene_Main : MonoBehaviour
 {
+    [Header("Side Panel")]
+    [SerializeField] private RectTransform leftSide;
+    [SerializeField] private RectTransform rightSide;
+
     [Header("Current Time")]
     [SerializeField] private TextMeshProUGUI displayTime;
 
@@ -166,12 +170,20 @@ public class UI_Scene_Main : MonoBehaviour
     {
         Manager.Game.State = GameState.Pause;
         dialoguePanel.SetActive(true);
+
+        leftSide.MoveSidebar(-1160);
+        rightSide.MoveSidebar(1160);
+
+        dialogueText.TypingText(0.05f);
     }
 
     private void ExitDialogue()
     {
         Manager.Game.State = GameState.Play;
         dialoguePanel.SetActive(false);
+
+        leftSide.MoveSidebar(-760);
+        rightSide.MoveSidebar(760);
     }
 
     public void ActiveDialogueButton(bool isOn, NPCBlueprint npcBlueprint = null)

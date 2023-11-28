@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AnimatorController_NPC_Doc
+  m_Name: AnimatorController_NPC_Pumpkin
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isRun
@@ -70,7 +70,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ec23c4499f3d67542bd5ea9acae728bf, type: 2}
+  m_Motion: {fileID: 7400000, guid: 094c683e94518ef41b91f81f4ffac8d4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

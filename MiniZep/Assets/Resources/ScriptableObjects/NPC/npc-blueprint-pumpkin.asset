@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5dcb1f9604dfe4382847005a2b524f, type: 3}
+  m_Name: npc-blueprint-pumpkin
+  m_EditorClassIdentifier: 
+  cName: "\uD38C\uD0A8"
+  cSprite: {fileID: -874481319, guid: d64e01741ef9877498a7314816dc4d6e, type: 3}
+  cAnim: {fileID: 9100000, guid: e48c96a1a35153a46b8f06b220627c11, type: 2}
+  npcIntro: "\uD5E4\uD5E4.. \uC548\uB155 \uB09C \uD38C\uD0A8\uC774\uC57C~"

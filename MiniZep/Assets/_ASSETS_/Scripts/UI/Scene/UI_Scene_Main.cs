@@ -22,17 +22,29 @@ public class UI_Scene_Main : MonoBehaviour
     [SerializeField] private GameObject nameChangePanel;
     [SerializeField] private TMP_InputField nameChangeInput;
 
-    [Header("View Community")]
+    [Header("Community")]
     [SerializeField] private Button communityShowBtn;
     [SerializeField] private Button communityHideBtn;
     [SerializeField] private GameObject communityPanel;
     [SerializeField] private Transform communityList;
 
+    [Header("Dialogue")]
+    [SerializeField] private Button dialogueEnterBtn;
+    [SerializeField] private Button dialogueExitBtn;
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private Image portraitImage;
+    [SerializeField] private TextMeshProUGUI portraitName;
+    [SerializeField] private TextMeshProUGUI dialogueText;
+
     private void OnEnable()
     {
         InitCharacterChange();
         InitNameChange();
-        InitViewCommunity();
+        InitCommunity();
+        InitDialogue();
+
+        Manager.Game.MainUI = this;
+        Manager.Game.CommunityList = communityList;
     }
 
     private IEnumerator Start()
@@ -53,6 +65,7 @@ public class UI_Scene_Main : MonoBehaviour
         characterChangeEnterBtn.onClick.AddListener(EnterCharacterChange);
         characterChangeExitBtn.onClick.AddListener(ExitCharacterChange);
         characterChangeBtn.onClick.AddListener(OnCharacterChange);
+        characterChangePanel.SetActive(false);
     }
 
     private void EnterCharacterChange()
@@ -83,6 +96,7 @@ public class UI_Scene_Main : MonoBehaviour
         nameChangeExitBtn.onClick.AddListener(ExitNameChange);
         nameChangeBtn.onClick.AddListener(OnNameChange);
         nameChangeInput.onEndEdit.AddListener(delegate { ChangedName(nameChangeInput); });
+        nameChangePanel.SetActive(false);
     }
 
     private void EnterNameChange()
@@ -118,13 +132,13 @@ public class UI_Scene_Main : MonoBehaviour
 
     #endregion
 
-    #region View Community
+    #region Community Methods
 
-    private void InitViewCommunity()
+    private void InitCommunity()
     {
         communityShowBtn.onClick.AddListener(ShowCommunity);
         communityHideBtn.onClick.AddListener(HideCommunity);
-        Manager.Game.CommunityList = communityList;
+        communityPanel.SetActive(false);
     }
 
     private void ShowCommunity()
@@ -135,6 +149,49 @@ public class UI_Scene_Main : MonoBehaviour
     private void HideCommunity()
     {
         communityPanel.SetActive(false);
+    }
+
+    #endregion
+
+    #region Dialogue Methods
+
+    private void InitDialogue()
+    {
+        dialogueEnterBtn.onClick.AddListener(EnterDialogue);
+        dialogueExitBtn.onClick.AddListener(ExitDialogue);
+        dialoguePanel.SetActive(false);
+    }
+
+    private void EnterDialogue()
+    {
+        Manager.Game.State = GameState.Pause;
+        dialoguePanel.SetActive(true);
+    }
+
+    private void ExitDialogue()
+    {
+        Manager.Game.State = GameState.Play;
+        dialoguePanel.SetActive(false);
+    }
+
+    public void ActiveDialogueButton(bool isOn, NPCBlueprint npcBlueprint = null)
+    {
+        if (isOn)
+        {
+            dialogueEnterBtn.gameObject.SetActive(true);
+            SetDialogue(npcBlueprint);
+        }
+        else
+        {
+            dialogueEnterBtn.gameObject.SetActive(false);
+        }
+    }
+
+    private void SetDialogue(NPCBlueprint npcBlueprint)
+    {
+        portraitName.text = npcBlueprint.CName;
+        portraitImage.sprite = npcBlueprint.CSprite;
+        dialogueText.text = npcBlueprint.NPCIntro;
     }
 
     #endregion

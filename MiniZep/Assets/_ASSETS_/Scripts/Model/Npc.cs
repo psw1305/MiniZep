@@ -37,7 +37,7 @@ public class NPC : MonoBehaviour, ICharacter
     {
         if (collision.CompareTag("Player"))
         {
-            Manager.Game.MainUI.ActiveDialogueButton(true, npcBlueprint);
+            Manager.Game?.MainUI.ActiveDialogueButton(true, npcBlueprint);
             outlineSprite.color = Color.white;
         }
     }
@@ -46,7 +46,7 @@ public class NPC : MonoBehaviour, ICharacter
     {
         if (collision.CompareTag("Player"))
         {
-            Manager.Game.MainUI.ActiveDialogueButton(false);
+            Manager.Game?.MainUI.ActiveDialogueButton(false);
             outlineSprite.color = Color.clear;
         }
     }

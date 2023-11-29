@@ -6,8 +6,8 @@
 
 ## ⚙️ 개발환경
 
-- **Editor** : 'Unity(22.3.12)' 
-- **Framework** : Visual Studio(2022)
+- **Editor** : Unity 22.3.12 
+- **Framework** : Visual Studio 2022
 
 ## 🕰️ 개발 기간
 

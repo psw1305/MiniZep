@@ -6,8 +6,8 @@
 
 ## ⚙️ 개발환경
 
-- **Editor** : 'Unity(22.3.12)' 
-- **Framework** : Visual Studio(2022)
+- **Editor** : Unity 22.3.12 
+- **Framework** : Visual Studio 2022
 
 ## 🕰️ 개발 기간
 
@@ -31,19 +31,26 @@
 ## ▶️ 구현 목록
 
 <p align="center">
-  <img src="" width="49%"/>
-  <img src="" width="49%"/>
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/96bf9429-8b81-486d-b405-4dfdbf3bc458" width="49%" alt="로비-캐릭터선택"/>
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/bddeb9de-a7bf-4508-8707-9471fd1ef015" width="49%" alt="로비-이름선택"/>
 </p>
 <p align="center">
-  <img src="" width="49%"/>
-  <img src="" width="49%"/>
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/8fe4cf44-bbf4-4095-8b6c-2db58f5ba49c" width="49%" alt="캐릭터움직임"/>
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/9e20cfe2-475d-4329-b3e7-649d0b4c372d" width="49%" alt="화면움직임"/>
   </p>
 <p align="center">
-  <img width="49%" height="450" alt="status" src="">
-  <img width="49%" height="450" alt="select" src="">
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/30a285b9-317b-42f8-beeb-2b97bfade91d" width="49%" alt="메인-캐릭터교체"/>
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/f0f47587-e93b-4d76-a0c6-f12a801f5717" width="49%" alt="메인-이름교체"/>
 </p>
 <p align="center">
-  <img width="49%" height="450"  alt="equipment" src="">
-  <img width="49%" height="450"  alt="entrance" src="">
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/36561f46-dd03-4eaa-886a-041dc973c9ee" width="49%" alt="참석인원"/>
+  <img src="https://github.com/psw1305/MiniZep/assets/6329345/bab3d074-d89b-4654-b999-7e08b61cee5a" width="49%" alt="NPC대화"/>
 </p>
-<img width="50%" height="450" alt="main" src="">
+
+## 🎁 사용 에셋
+
+**Player** : https://arks.itch.io/dino-characters
+</br>
+**NPC** : https://0x72.itch.io/dungeontileset-ii
+</br>
+**UI** : https://cupnooble.itch.io/sprout-lands-ui-pack

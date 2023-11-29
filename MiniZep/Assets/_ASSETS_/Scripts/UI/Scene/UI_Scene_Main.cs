@@ -188,6 +188,8 @@ public class UI_Scene_Main : MonoBehaviour
 
     public void ActiveDialogueButton(bool isOn, NPCBlueprint npcBlueprint = null)
     {
+        if (dialogueEnterBtn == null) return;
+
         if (isOn)
         {
             dialogueEnterBtn.gameObject.SetActive(true);

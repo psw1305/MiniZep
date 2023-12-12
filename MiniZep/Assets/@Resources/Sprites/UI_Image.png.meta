@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui-board-darkbrown
+      name: ui-button-check2-click
       rect:
         serializedVersion: 2
         x: 656
@@ -597,6 +597,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ui-button-check2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 808
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 8, y: 6, z: 8, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52dfe88fdf172e4a86af6dac576abcd
+      internalID: -271132280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -611,13 +632,14 @@ TextureImporter:
       UI Set_1: 962096326
       ui-board-0: -37726791
       ui-board-1: 271497965
-      ui-board-darkbrown: -888798411
       ui-board-player-list: 1483276437
       ui-board-player-select: 1380233096
       ui-button-cancle: -1277043727
       ui-button-cancle-click: 1551701291
       ui-button-check: 1775771148
       ui-button-check-click: 811423665
+      ui-button-check2: -271132280
+      ui-button-check2-click: -888798411
       ui-button-community: 917161185
       ui-button-community-click: 1801273578
       ui-button-escape: 2113124757

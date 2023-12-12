@@ -1,19 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+
+public enum ItemType
+{
+    Weapon,
+    Armor,
+    Helmet,
+    Shoes,
+}
 
 [Serializable]
 public class ItemData
 {
-    public enum ItemType
-    {
-        Weapon,
-        Armor,
-        Helmet, 
-        Boots,
-    }
-
     public ItemType itemType;
     public string itemStringKey;
     public int itemStatHP;

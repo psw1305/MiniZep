@@ -270,8 +270,9 @@ GameObject:
   - component: {fileID: 8751910423221824499}
   - component: {fileID: 5398617677702864605}
   - component: {fileID: 7816838309784907784}
+  - component: {fileID: 8337516821127102512}
   m_Layer: 5
-  m_Name: Icon_Armor
+  m_Name: Equipment_Slot_Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,6 +336,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8337516821127102512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637571375763524246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: -13
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &695983650503790179
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +526,7 @@ GameObject:
   - component: {fileID: 458774053332782440}
   - component: {fileID: 8484933246072277432}
   m_Layer: 5
-  m_Name: Eqipment_Slot_Helmet
+  m_Name: Helmet Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,7 +679,7 @@ GameObject:
   - component: {fileID: 1565827326563371142}
   - component: {fileID: 7208901625477838654}
   m_Layer: 5
-  m_Name: Eqipment_Slot_Boots
+  m_Name: Shoes Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2330,9 +2357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14892423ddd6c44429bfa95457db17d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blueprints:
-  - {fileID: 11400000, guid: 8d94e28f900c57e418f826027339bea9, type: 2}
-  - {fileID: 11400000, guid: 68211ca4859d4ea49a89ed7a65ae46e5, type: 2}
 --- !u!1 &3818644455268846397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,8 +2495,9 @@ GameObject:
   - component: {fileID: 976086352915818901}
   - component: {fileID: 7230649026165289181}
   - component: {fileID: 2290503904692451463}
+  - component: {fileID: 4677473085946509675}
   m_Layer: 5
-  m_Name: Icon_Sabatons
+  m_Name: Equipment_Slot_Shoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2536,6 +2561,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4677473085946509675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454852586900751127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: -13
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &4543548584419847598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,7 +2599,7 @@ GameObject:
   - component: {fileID: 4593038332530210243}
   - component: {fileID: 3671032648962121345}
   m_Layer: 5
-  m_Name: Eqipment_Slot_Weapon
+  m_Name: Weapon Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4026,8 +4077,9 @@ GameObject:
   - component: {fileID: 715306621052521406}
   - component: {fileID: 4221445630756657309}
   - component: {fileID: 4094376323813787341}
+  - component: {fileID: 476329146798117881}
   m_Layer: 5
-  m_Name: Icon_Weapon
+  m_Name: Equipment_Slot_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4091,6 +4143,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &476329146798117881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6472739711218181549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: -13
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &6550886194128043681
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,8 +4602,9 @@ GameObject:
   - component: {fileID: 4194760919611871651}
   - component: {fileID: 6029056857787598046}
   - component: {fileID: 6875877330245038407}
+  - component: {fileID: 4251801664065147943}
   m_Layer: 5
-  m_Name: Icon_Helmet
+  m_Name: Equipment_Slot_Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4589,6 +4668,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4251801664065147943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069038705415650905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: -13
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &7548600247833217215
 GameObject:
   m_ObjectHideFlags: 0
@@ -5017,7 +5122,7 @@ GameObject:
   - component: {fileID: 6987373802114061721}
   - component: {fileID: 4994205970547299890}
   m_Layer: 5
-  m_Name: Eqipment_Slot_Armor
+  m_Name: Armor Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

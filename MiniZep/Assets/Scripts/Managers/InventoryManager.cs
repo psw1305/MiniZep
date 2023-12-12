@@ -5,20 +5,19 @@ public class InventoryManager
 {
     public event EventHandler OnInventoryChanged;
 
-    public List<InventoryItem> Inventory { get; private set; }
-
-    private int invenMaxCount = 16;
+    public List<InventoryItem> ItemList { get; private set; }
+    private int _listMaxCount = 16;
 
     public InventoryManager() 
     {
-        Inventory = new List<InventoryItem>();
+        ItemList = new List<InventoryItem>();
     }
 
     public void AddItem(InventoryItem item, bool inventoryCheck = true)
     {
-        if (Inventory.Count <= invenMaxCount)
+        if (ItemList.Count <= _listMaxCount)
         {
-            Inventory.Add(item);
+            ItemList.Add(item);
 
             if (inventoryCheck)
                 OnInventoryChanged?.Invoke(this, EventArgs.Empty);
@@ -27,7 +26,7 @@ public class InventoryManager
 
     public void RemoveItem(InventoryItem item, bool inventoryCheck = true) 
     {
-        Inventory.Remove(item);
+        ItemList.Remove(item);
 
         if (inventoryCheck)
             OnInventoryChanged?.Invoke(this, EventArgs.Empty);

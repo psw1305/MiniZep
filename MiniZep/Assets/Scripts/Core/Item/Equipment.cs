@@ -1,56 +1,46 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-
-public enum EquipSlot
-{
-    Weapon,
-    Armor,
-    Helmet,
-    Shoes,
-}
-
 
 public class Equipment
 {
-    private readonly Dictionary<EquipSlot, GameObject> equipped = new();
-    public IReadOnlyDictionary<EquipSlot, GameObject> Equipped => equipped;
+    private readonly Dictionary<int, InventoryItem> equipped = new();
+    public IReadOnlyDictionary<int, InventoryItem> Equipped => equipped;
 
     public Equipment()
     {
-        //var slots = Enum.GetValues<EquipSlot>();
+        var slots = Enum.GetValues(typeof(ItemType));
 
-        //foreach (var slot in slots)
-        //{
-        //    if (equipped.GetValueOrDefault(slot) != null) continue;
-        //    //equipped[slot] = GameObject.Empty;
-        //}
+        for (int slot = 0; slot < slots.Length; slot++)
+        {
+            if (equipped.GetValueOrDefault(slot) != null) continue;
+            equipped[slot] = InventoryItem.Empty;
+        }
     }
 
-    public void Equip(EquipSlot slot, GameObject data)
+    public void Equip(int slot, InventoryItem item)
     {
-        equipped.TryGetValue(slot, out var item);
+        equipped.TryGetValue(slot, out var equipItem);
 
         // 같은 장비를 착용중 인가?
-        if (item == data)
+        if (equipItem == item)
         {
             Unequip(slot);
             return;
         }
 
         // 해당 장비창이 비어있지 않은가?
-        //if (!equipped[slot].IsEmptyItem())
-        //{
-        //    Unequip(slot);
-        //}
+        if (!equipped[slot].IsEmptyItem())
+        {
+            Unequip(slot);
+        }
 
-        //equipped[slot] = data;
-        //equipped[slot].IsEquip = true;
+        equipped[slot] = item;
+        equipped[slot].Equipped();
     }
 
-    public void Unequip(EquipSlot slot)
+    public void Unequip(int slot)
     {
-        //equipped[slot].IsEquip = false;
-        //equipped[slot] = Gear.Empty;
+        equipped[slot].Unequipped();
+        equipped[slot] = InventoryItem.Empty;
     }
 }

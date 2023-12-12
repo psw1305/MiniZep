@@ -19,7 +19,7 @@ public class UI_Item : UI_Base
 
     #region Properties
 
-    public ItemData Data { get; private set; }
+    public InventoryItem Item { get; private set; }
 
     #endregion
 
@@ -40,21 +40,21 @@ public class UI_Item : UI_Base
         return true;
     }
 
-    public void SetInfo(string key)
+    public void SetInfo(InventoryItem item)
     {
-        Data = Main.Data.Items[key];
+        Item = item;
     }
 
     public void Refresh()
     {
-        if (Data == null) return;
+        if (Item == null) return;
 
         Init();
-        GetImage((int)Images.Image_Item).sprite = Main.Resource.Load<Sprite>($"{Data.itemStringKey}.sprite");
+        GetImage((int)Images.Image_Item).sprite = Item.ItemImage;
     }
 
     private void OnItemInfo(PointerEventData data)
     {
-        Main.UI.ShowPopupUI<UI_Popup_ItemInfo>().SetItemInfo(Data);
+        Main.UI.ShowPopupUI<UI_Popup_ItemInfo>().SetItemInfo(this);
     }
 }

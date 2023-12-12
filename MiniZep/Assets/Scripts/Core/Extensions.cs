@@ -6,32 +6,22 @@ using UnityEngine.EventSystems;
 
 public static class Extensions
 {
-    /// <summary>
-    /// 바인드 이벤트
-    /// </summary>
-    /// <param name="go"></param>
-    /// <param name="action"></param>
-    /// <param name="type"></param>
+    // 바인드 이벤트
     public static void BindEvent(this GameObject go, Action<PointerEventData> action = null, Define.UIEvent type = Define.UIEvent.Click)
     {
         UI_Base.BindEvent(go, action, type);
     }
 
-    /// <summary>
-    /// [DOTween] RectTransform X 좌표 움직임
-    /// </summary>
-    /// <param name="rectTransform"></param>
-    /// <param name="movePosX">도착하는 로컬 포지션 x 좌표</param>
+    // 아이템의 데이터 키값이 없을경우 => true
+    public static bool IsEmptyItem(this InventoryItem item) => string.IsNullOrEmpty(item.Key);
+
+    // [DOTween] RectTransform X 좌표 움직임
     public static void MoveSidebar(this RectTransform rectTransform, float movePosX)
     {
         rectTransform.DOLocalMoveX(movePosX, 0.4f);
     }
 
-    /// <summary>
-    /// [DOTween] 텍스트 타이핑 치듯이 연출 
-    /// </summary>
-    /// <param name="tmproText"></param>
-    /// <param name="duration"></param>
+    // [DOTween] 텍스트 타이핑 치듯이 연출 
     public static void TypingText(this TextMeshProUGUI tmproText, float duration)
     {
         float maxDuration = tmproText.text.Length * duration;

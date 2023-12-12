@@ -71,7 +71,6 @@ public class UIManager
         return popup;
     }
 
-
     public void ClosePopupUI(UI_Popup popup) // 안전 차원
     {
         if (_popupStack.Count == 0) // 비어있는 스택이라면 삭제 불가

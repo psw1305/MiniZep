@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class Player : SingletonBehaviour<Player>, ICharacter
+public class Player : ICharacter
 {
     public string Name { get; set; }
 
@@ -10,14 +10,9 @@ public class Player : SingletonBehaviour<Player>, ICharacter
     [SerializeField] private Animator animator;
 
     private CharacterBlueprint characterBlueprint;
-    private GameObject communityNameObj;
 
     private void Start()
     {
-        //communityNameObj = Main.Resource.Instantiate("UI_Community_Name", Main.Game.CommunityList);
-        //var communityName = communityNameObj.GetComponent<TextMeshProUGUI>();
-        //communityName.text = displayName.text;
-
         InitPlayer();
     }
 
@@ -39,8 +34,5 @@ public class Player : SingletonBehaviour<Player>, ICharacter
     public void InitName()
     {
         displayName.text = PlayerPrefs.GetString("user_id", "defaultID");
-
-        var communityName = communityNameObj.GetComponent<TextMeshProUGUI>();
-        communityName.text = displayName.text;
     }
 }

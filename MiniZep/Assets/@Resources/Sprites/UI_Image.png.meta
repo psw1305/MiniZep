@@ -513,6 +513,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ui-button-check
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 808
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 6, z: 8, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0876ddc8c1948f544b259711479c5316
+      internalID: 1775771148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-button-cancle
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 808
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 6, z: 8, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1857bbb9178253f439c65bb822d47e0a
+      internalID: -1277043727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-button-check-click
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 776
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 6, z: 8, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1b1fac7a1d7524b943590906c4656f
+      internalID: 811423665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-button-cancle-click
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 776
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 6, z: 8, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b44af00c59b8142b8ddff7398e89ef
+      internalID: 1551701291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -530,6 +614,10 @@ TextureImporter:
       ui-board-darkbrown: -888798411
       ui-board-player-list: 1483276437
       ui-board-player-select: 1380233096
+      ui-button-cancle: -1277043727
+      ui-button-cancle-click: 1551701291
+      ui-button-check: 1775771148
+      ui-button-check-click: 811423665
       ui-button-community: 917161185
       ui-button-community-click: 1801273578
       ui-button-escape: 2113124757

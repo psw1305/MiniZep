@@ -18,13 +18,13 @@ MonoBehaviour:
   m_GUID: 2a1d9322c2f44184a9cbb77024791cbf
   m_SerializeEntries:
   - m_GUID: 349c25b1e007f664696ea14d6d56b174
-    m_Address: UI_Popup_Status.prefab
+    m_Address: UI_Popup_PlayerInfo.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9144fe972399e6942b34522c09dd0ce5
-    m_Address: UI_Popup_Inventory.prefab
+  - m_GUID: ead118b09811b3444aecea277d7f13d2
+    m_Address: UI_Popup_ItemInfo.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

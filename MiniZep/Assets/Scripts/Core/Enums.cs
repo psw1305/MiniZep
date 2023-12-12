@@ -1,5 +1,5 @@
 /// <summary>
-/// ·Îºñ ¾À Ä³¸¯ »ı¼º ´Ü°è Å¸ÀÔ
+/// ë¡œë¹„ ì”¬ ìºë¦­ ìƒì„± ë‹¨ê³„ íƒ€ì…
 /// </summary>
 public enum LobbyStep
 {
@@ -10,10 +10,12 @@ public enum LobbyStep
 }
 
 /// <summary>
-/// °ÔÀÓ ÁøÇà Å¸ÀÔ
+/// ê²Œì„ ì§„í–‰ íƒ€ì…
 /// </summary>
 public enum GameState
 {
     Pause,
     Play,
 }
+
+

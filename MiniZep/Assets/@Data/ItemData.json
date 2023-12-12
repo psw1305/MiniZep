@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "item": 0,
+      "itemType": 0,
+      "itemStringKey": "item-weapon-01",
+      "itemStatHP": 0,
+      "itemStatATK": 7,
+      "itemStatDEF": 0,
+      "itemStatCRIT": 0,
+      "itemName": "기사의 검",
+      "itemDesc": "여정에 필요한 기본 무장"
+    },
+    {
+      "item": 1,
+      "itemType": 0,
+      "itemStringKey": "item-weapon-02",
+      "itemStatHP": 0,
+      "itemStatATK": 14,
+      "itemStatDEF": 0,
+      "itemStatCRIT": 4.0,
+      "itemName": "광선검",
+      "itemDesc": "전기로 둘러싸인 빛나는 검"
+    },
+    {
+      "item": 2,
+      "itemType": 1,
+      "itemStringKey": "item-armor-01",
+      "itemStatHP": 10,
+      "itemStatATK": 0,
+      "itemStatDEF": 2,
+      "itemStatCRIT": 0,
+      "itemName": "기사의 갑옷",
+      "itemDesc": "여정에 필요한 기본 무장"
+    },
+    {
+      "item": 3,
+      "itemType": 1,
+      "itemStringKey": "item-armor-02",
+      "itemStatHP": 25,
+      "itemStatATK": 0,
+      "itemStatDEF": 5,
+      "itemStatCRIT": 0,
+      "itemName": "티타늄 갑옷",
+      "itemDesc": "가장 단단한 물질인 티타늄으로 만들어진 갑옷"
+    },
+    {
+      "item": 4,
+      "itemType": 2,
+      "itemStringKey": "item-helm-01",
+      "itemStatHP": 0,
+      "itemStatATK": 0,
+      "itemStatDEF": 4,
+      "itemStatCRIT": 0,
+      "itemName": "기사의 투구",
+      "itemDesc": "여정에 필요한 기본 무장"
+    },
+    {
+      "item": 5,
+      "itemType": 2,
+      "itemStringKey": "item-helm-02",
+      "itemStatHP": 0,
+      "itemStatATK": 0,
+      "itemStatDEF": 8,
+      "itemStatCRIT": 2.5,
+      "itemName": "황금 투구",
+      "itemDesc": "황금색으로 칠해진 투구"
+    },
+    {
+      "item": 6,
+      "itemType": 3,
+      "itemStringKey": "item-shoes-01",
+      "itemStatHP": 0,
+      "itemStatATK": 0,
+      "itemStatDEF": 1,
+      "itemStatCRIT": 0,
+      "itemName": "가죽 신발",
+      "itemDesc": "평소에 자주 보는 가죽으로 만든 신발"
+    },
+    {
+      "item": 7,
+      "itemType": 3,
+      "itemStringKey": "item-shoes-02",
+      "itemStatHP": 0,
+      "itemStatATK": 0,
+      "itemStatDEF": 2,
+      "itemStatCRIT": 0,
+      "itemName": "기사의 신발",
+      "itemDesc": "여정에 필요한 기본 무장"
+    }
+  ]
+}

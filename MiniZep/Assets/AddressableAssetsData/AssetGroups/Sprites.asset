@@ -17,50 +17,50 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 886e571725de855449b7f04e2130de92
   m_SerializeEntries:
-  - m_GUID: 99556bacbb4fe334faaf0f2f4b1bb1d8
-    m_Address: UI_Image
+  - m_GUID: 38860293fd8216c42a7824575a3e19bb
+    m_Address: item-weapon-02.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d64e01741ef9877498a7314816dc4d6e
-    m_Address: NPC_Pumpkin
+  - m_GUID: 44cf03f37553d5b4091ea633e190cf20
+    m_Address: item-weapon-01.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2376526216f15564ca1cc2d66506753e
-    m_Address: NPC_Doc
+  - m_GUID: 9b2d24d2466a9cc45a86ffc32227cb94
+    m_Address: item-helm-02.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c4525fdbc47964946af349f7755bd57c
-    m_Address: Nature Tile
+  - m_GUID: b5c8561e7799c6b4da8acccfebd1a403
+    m_Address: item-helm-01.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 17a3da39139020440883660b1ff7b726
-    m_Address: Player_Dino_Vita
+  - m_GUID: 13328186d4a32a540b56e01e261d8747
+    m_Address: item-armor-01.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e9a9951b4ec385449859eadfc8caf674
-    m_Address: Player_Dino_Tard
+  - m_GUID: 040d78574cb9bd34180058cc811a10bb
+    m_Address: item-armor-02.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2f43fd9c416c07a4a8d9c7d5fab28dca
-    m_Address: Player_Dino_Mort
+  - m_GUID: ffd91cd6cf368ba4d85f29b19e9acddf
+    m_Address: item-shoes-01.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 33edbb54db9ad3f46a820361568ad85e
-    m_Address: Player_Dino_Doux
+  - m_GUID: 4bb4952f0e7c10d42b2586d287c01bcd
+    m_Address: item-shoes-02.sprite
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

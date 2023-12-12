@@ -9,5 +9,4 @@ public class GameScene : BaseScene
 
         return true;
     }
-
 }

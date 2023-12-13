@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class UI_Popup_PlayerInfo : UI_Popup
+public class UI_Popup_Inventory : UI_Popup
 {
     #region Enums
 
@@ -32,7 +32,7 @@ public class UI_Popup_PlayerInfo : UI_Popup
 
     #endregion
 
-    #region Properties
+    #region Fields
 
     private List<UI_Item> _uiItemLists = new();
 
@@ -69,6 +69,9 @@ public class UI_Popup_PlayerInfo : UI_Popup
         return true;
     }
 
+    /// <summary>
+    /// 플레이어 스탯 새로고침
+    /// </summary>
     public void RefreshStat()
     {
         GetText((int)Texts.Text_Player_Atk).text = Main.Player.ATK.Value.ToString();
@@ -77,9 +80,16 @@ public class UI_Popup_PlayerInfo : UI_Popup
         GetText((int)Texts.Text_Player_Crit).text = Main.Player.CRIT.Value.ToString();
     }
 
-    public void RefreshItem(UI_Item uiItem)
+    /// <summary>
+    /// 인벤토리 아이템 리스트 새로고침
+    /// </summary>
+    public void RefreshItem()
     {
-        uiItem.transform.SetParent(ItemEquipCheck(uiItem.Item));
+        foreach (var uiItem in _uiItemLists)
+        {
+            uiItem.transform.SetParent(ItemEquipCheck(uiItem.Item));
+        }
+
         RefreshStat();
     }
 

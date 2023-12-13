@@ -9,7 +9,8 @@
       "itemStatDEF": 0,
       "itemStatCRIT": 0,
       "itemName": "기사의 검",
-      "itemDesc": "여정에 필요한 기본 무장"
+      "itemDesc": "여정에 필요한 기본 무장",
+      "itemPrice": 5000
     },
     {
       "item": 1,
@@ -20,10 +21,23 @@
       "itemStatDEF": 0,
       "itemStatCRIT": 4.0,
       "itemName": "광선검",
-      "itemDesc": "전기로 둘러싸인 빛나는 검"
+      "itemDesc": "전기로 둘러싸인 빛나는 검",
+      "itemPrice": 10000
     },
     {
       "item": 2,
+      "itemType": 0,
+      "itemStringKey": "item-weapon-03",
+      "itemStatHP": 0,
+      "itemStatATK": 50,
+      "itemStatDEF": 0,
+      "itemStatCRIT": 25.0,
+      "itemName": "공포 검",
+      "itemDesc": "어둠의 군주가 사용했던 검",
+      "itemPrice": 50000
+    },
+    {
+      "item": 3,
       "itemType": 1,
       "itemStringKey": "item-armor-01",
       "itemStatHP": 10,
@@ -31,10 +45,11 @@
       "itemStatDEF": 2,
       "itemStatCRIT": 0,
       "itemName": "기사의 갑옷",
-      "itemDesc": "여정에 필요한 기본 무장"
+      "itemDesc": "여정에 필요한 기본 무장",
+      "itemPrice": 4000
     },
     {
-      "item": 3,
+      "item": 4,
       "itemType": 1,
       "itemStringKey": "item-armor-02",
       "itemStatHP": 25,
@@ -42,10 +57,23 @@
       "itemStatDEF": 5,
       "itemStatCRIT": 0,
       "itemName": "티타늄 갑옷",
-      "itemDesc": "가장 단단한 물질인 티타늄으로 만들어진 갑옷"
+      "itemDesc": "가장 단단한 물질인 티타늄으로 만들어진 갑옷",
+      "itemPrice": 8000
     },
     {
-      "item": 4,
+      "item": 5,
+      "itemType": 1,
+      "itemStringKey": "item-armor-03",
+      "itemStatHP": 200,
+      "itemStatATK": 0,
+      "itemStatDEF": 50,
+      "itemStatCRIT": 0,
+      "itemName": "공포 갑주",
+      "itemDesc": "어둠 군주가 착용했던 갑주",
+      "itemPrice": 50000
+    },
+    {
+      "item": 6,
       "itemType": 2,
       "itemStringKey": "item-helm-01",
       "itemStatHP": 0,
@@ -53,10 +81,11 @@
       "itemStatDEF": 4,
       "itemStatCRIT": 0,
       "itemName": "기사의 투구",
-      "itemDesc": "여정에 필요한 기본 무장"
+      "itemDesc": "여정에 필요한 기본 무장",
+      "itemPrice": 2500
     },
     {
-      "item": 5,
+      "item": 7,
       "itemType": 2,
       "itemStringKey": "item-helm-02",
       "itemStatHP": 0,
@@ -64,10 +93,23 @@
       "itemStatDEF": 8,
       "itemStatCRIT": 2.5,
       "itemName": "황금 투구",
-      "itemDesc": "황금색으로 칠해진 투구"
+      "itemDesc": "황금색으로 칠해진 투구",
+      "itemPrice": 5000
     },
     {
-      "item": 6,
+      "item": 8,
+      "itemType": 2,
+      "itemStringKey": "item-helm-03",
+      "itemStatHP": 0,
+      "itemStatATK": 0,
+      "itemStatDEF": 20,
+      "itemStatCRIT": 15.0,
+      "itemName": "공포 투구",
+      "itemDesc": "어둠 군주가 착용했던 투구",
+      "itemPrice": 50000
+    },
+    {
+      "item": 9,
       "itemType": 3,
       "itemStringKey": "item-shoes-01",
       "itemStatHP": 0,
@@ -75,18 +117,32 @@
       "itemStatDEF": 1,
       "itemStatCRIT": 0,
       "itemName": "가죽 신발",
-      "itemDesc": "평소에 자주 보는 가죽으로 만든 신발"
+      "itemDesc": "평소에 자주 보는 가죽으로 만든 신발",
+      "itemPrice": 1000
     },
     {
-      "item": 7,
+      "item": 10,
       "itemType": 3,
       "itemStringKey": "item-shoes-02",
       "itemStatHP": 0,
       "itemStatATK": 0,
       "itemStatDEF": 2,
       "itemStatCRIT": 0,
-      "itemName": "기사의 신발",
-      "itemDesc": "여정에 필요한 기본 무장"
+      "itemName": "기사의 각반",
+      "itemDesc": "여정에 필요한 기본 무장",
+      "itemPrice": 2000
+    },
+    {
+      "item": 11,
+      "itemType": 3,
+      "itemStringKey": "item-shoes-03",
+      "itemStatHP": 10,
+      "itemStatATK": 0,
+      "itemStatDEF": 10,
+      "itemStatCRIT": 10.0,
+      "itemName": "공포 각반",
+      "itemDesc": "어둠 군주가 착용했던 각반",
+      "itemPrice": 50000
     }
   ]
 }

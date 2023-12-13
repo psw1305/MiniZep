@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.EventSystems;
-using static UnityEditor.Progress;
 
 public class UI_Popup_ItemInfo : UI_Popup
 {
@@ -31,11 +28,10 @@ public class UI_Popup_ItemInfo : UI_Popup
 
     #endregion
 
-    #region Properties
+    #region Fields
 
-    private UI_Item _uiItem;
+    private UI_Popup_Inventory _inventory;
     private InventoryItem _item;
-    private UI_Popup_PlayerInfo _playerInfo;
 
     #endregion
 
@@ -65,7 +61,7 @@ public class UI_Popup_ItemInfo : UI_Popup
 
     private void Refresh()
     {
-        if (_uiItem == null) return;
+        if (_item == null) return;
 
         Init();
 
@@ -82,9 +78,8 @@ public class UI_Popup_ItemInfo : UI_Popup
 
     public void SetItemInfo(UI_Item uiItem)
     {
-        this._uiItem = uiItem;
-        _item = _uiItem.Item;
-        _playerInfo = FindObjectOfType<UI_Popup_PlayerInfo>();
+        _item = uiItem.Item;
+        _inventory = FindObjectOfType<UI_Popup_Inventory>();
         Refresh();
     }
 
@@ -112,16 +107,16 @@ public class UI_Popup_ItemInfo : UI_Popup
 
     public void OnEquipped(PointerEventData data)
     {
-        Main.Player.Equipment.Equip((int)_item.BaseData.itemType, _uiItem.Item);
+        Main.Player.Equipment.Equip((int)_item.BaseData.itemType, _item);
         CheckEquipButton();
-        _playerInfo.RefreshItem(_uiItem);
+        _inventory.RefreshItem();
     }
 
     public void OnUnequipped(PointerEventData data)
     {
         Main.Player.Equipment.Unequip((int)_item.BaseData.itemType);
         CheckEquipButton();
-        _playerInfo.RefreshItem(_uiItem);
+        _inventory.RefreshItem();
     }
 
     public void OnPopupExit(PointerEventData data)

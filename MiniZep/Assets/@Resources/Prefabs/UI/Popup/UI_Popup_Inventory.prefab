@@ -2253,7 +2253,7 @@ GameObject:
   - component: {fileID: 5782074522336809389}
   - component: {fileID: 2429171786495668411}
   m_Layer: 5
-  m_Name: UI_Popup_PlayerInfo
+  m_Name: UI_Popup_Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5473,8 +5473,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280398583
-  m_fontColor: {r: 0.9686275, g: 0.69803923, b: 0.12941177, a: 1}
+    rgba: 4280591606
+  m_fontColor: {r: 0.96470594, g: 0.6431373, b: 0.14117648, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

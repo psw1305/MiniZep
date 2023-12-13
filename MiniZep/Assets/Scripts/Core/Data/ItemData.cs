@@ -21,6 +21,7 @@ public class ItemData
     public float itemStatCRIT;
     public string itemName;
     public string itemDesc;
+    public int itemPrice;
 }
 
 [Serializable]

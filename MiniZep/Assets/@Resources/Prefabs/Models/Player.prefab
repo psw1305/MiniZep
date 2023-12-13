@@ -4946,7 +4946,6 @@ GameObject:
   - component: {fileID: 2852248396551737523}
   - component: {fileID: 7674308759650289513}
   - component: {fileID: 7266235787605021175}
-  - component: {fileID: 8124923261955499031}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4969,7 +4968,7 @@ Transform:
   - {fileID: 3924720587682289569}
   - {fileID: 3204684427491506733}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1763054199276647063
 BoxCollider2D:
@@ -5112,21 +5111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterRenderer: {fileID: 4069071824015385410}
---- !u!114 &8124923261955499031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5059670248505462449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e29d704f17bd76148a7bde202b70fe21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  displayName: {fileID: 5969371383220435948}
-  spriteRenderer: {fileID: 4069071824015385410}
-  animator: {fileID: 7745970501131889797}
 --- !u!1 &7322215997855741725
 GameObject:
   m_ObjectHideFlags: 0

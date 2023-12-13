@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class UI_Scene_Game : UI_Scene
@@ -7,16 +6,11 @@ public class UI_Scene_Game : UI_Scene
 
     enum Buttons
     {
-        Btn_PlayerInfo,
+        Btn_Inventory,
+        Btn_Shop,
     }
 
     #endregion
-
-    #region Fields
-
-    private Player player;
-
-    #endregion;
 
     private void Start()
     {
@@ -29,13 +23,19 @@ public class UI_Scene_Game : UI_Scene
 
         BindButton(typeof(Buttons));
 
-        GetButton((int)Buttons.Btn_PlayerInfo).gameObject.BindEvent(OnPlayerInfo);
-        
+        GetButton((int)Buttons.Btn_Inventory).gameObject.BindEvent(OnInventory);
+        GetButton((int)Buttons.Btn_Shop).gameObject.BindEvent(OnShop);
+
         return true;
     }
 
-    private void OnPlayerInfo(PointerEventData data)
+    private void OnInventory(PointerEventData data)
     {
-        Main.UI.ShowPopupUI<UI_Popup_PlayerInfo>();
+        Main.UI.ShowPopupUI<UI_Popup_Inventory>();
+    }
+
+    private void OnShop(PointerEventData data)
+    {
+        Main.UI.ShowPopupUI<UI_Popup_Shop>();
     }
 }

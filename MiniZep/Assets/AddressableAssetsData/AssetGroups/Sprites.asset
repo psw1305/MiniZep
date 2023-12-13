@@ -65,6 +65,30 @@ MonoBehaviour:
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2494101a1bde06468ac9b4476473b00
+    m_Address: item-armor-03.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c98886ba74bd1294db9bc0a53f190299
+    m_Address: item-helm-03.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca620c7647681f04cba0bdd741a6ce0a
+    m_Address: item-shoes-03.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67f1857ea9994e1439342f975b2d4cdd
+    m_Address: item-weapon-03.sprite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 78db59567232fe1419cc32e34a8a742e, type: 2}
   m_SchemaSet:

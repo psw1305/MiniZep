@@ -15,7 +15,7 @@ public class PlayerManager
     {
         // #1. 기본 데이터 설정
         Name = "PSW";
-        Cash = 10000;
+        Cash = 200000;
 
         // #2. Stat 생성
         HP = new StatUnit(100);
@@ -23,13 +23,22 @@ public class PlayerManager
         DEF = new StatUnit(20);
         CRIT = new StatUnit(5);
 
-        // #3. 아이템 생성
-        foreach (string key in Main.Data.Items.Keys)
-        {
-            Main.Inventory.AddItem(new InventoryItem(key));
-        }
+        // #3. 시작 아이템 생성 [TODO => 하드코딩으로 임시 생성]
+        Main.Inventory.AddItem(new InventoryItem("item-weapon-01"));
+        Main.Inventory.AddItem(new InventoryItem("item-armor-01"));
+        Main.Inventory.AddItem(new InventoryItem("item-helm-01"));
+        Main.Inventory.AddItem(new InventoryItem("item-shoes-01"));
 
         // #4 장비 관리 기능 생성
         Equipment = new Equipment();
+    }
+
+    /// <summary>
+    /// 재화 사용
+    /// </summary>
+    /// <param name="useCash">사용된 재화 비용</param>
+    public void UseCash(int useCash)
+    {
+        Cash -= useCash;
     }
 }

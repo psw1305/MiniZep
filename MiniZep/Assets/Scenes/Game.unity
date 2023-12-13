@@ -489,9 +489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf0c1abaf74a594c906da143f044820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blueprints:
-  - {fileID: 11400000, guid: 8d94e28f900c57e418f826027339bea9, type: 2}
-  - {fileID: 11400000, guid: 68211ca4859d4ea49a89ed7a65ae46e5, type: 2}
 --- !u!1001 &1637035709
 PrefabInstance:
   m_ObjectHideFlags: 0

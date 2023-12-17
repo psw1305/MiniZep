@@ -10,7 +10,7 @@
 ## ⚙️ 개발환경
 
 - `Unity 2022.3.2`
-- **IDE** : Visual Studio 2019, 2022, MonoDevelop
+- **IDE** : Visual Studio 2022
 - **VCS** : Git (GitHub Desktop)
 
 ## 🕰️ 개발 기간
